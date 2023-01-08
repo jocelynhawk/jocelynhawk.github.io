@@ -98,9 +98,22 @@
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+                <h2 class="mb-4">Publications</h2>
+                <ul>
+                    <li><a style="color: white" href="https://pubmed.ncbi.nlm.nih.gov/36454942/">Hawk JL, Daulat SR, Margolis DS, Li ZM (2022). Dose- and time-dependent effects of collagenase clostridium histolyticum injection on transverse carpal ligament elastic modulus and thickness in vitro. PLOS ONE 17(12): e0277187.</a></li>
+                    <li><a style="color: white" href="https://pubmed.ncbi.nlm.nih.gov/36516561/">Hawk JL, Zhang H, Margolis DS, Li ZM (2023). Robot and ultrasound assisted needle insertion to the transverse carpal ligament, Clinical Biomechanics 101:105851.</a></li>
+
+                </ul>
+            </div>
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">Abstracts</h2>
+                <ul>
+                    <li><a style="color: white" href="assets/pdfs/NACOB2022_abstract.pdf">Hawk J, Daulat S, Margolis D, Li ZM. Ultrasonographic 3D reconstruction of and robot-assisted injection to the transverse carpal ligament. North American Congress on Biomechanics (NACOB). Ottawa, Canada. August 21-25, 2022</a></li>
+                    <li><a style="color: white" href="assets/pdfs/LYSIS3_abstract.pdf">Hawk J, Daulat S, Margolis D, Li ZM, Dose- and Time-Dependent Effects of Collagenase Clostridium Histolyticum Injection on Stiffness and Thickness of In Vitro Transverse Carpal Ligament, Summer Biomechanics, Bioengineering and Biotransport Conference (SB3C), Chesapeake Bay Resort, Maryland, June 20-23, 2022</a></li>
+                    <li><a style="color: white" href="assets/pdfs/LYSIS1_ORSAbstract.pdf">Hawk J, Zhang H, Margolis D, Li ZM, In Situ Needle Insertion to the Transverse Carpal Ligament Using Robot-Assisted Ultrasound, Annual Meeting of Orthopaedic Research Society (ORS), February 04-08, 2022, Tampa, FL</a></li>
+                    <li><a style="color: white" href="assets/pdfs/SWEL_abstract.pdf">Tamimi E, Hawk J, Witte R, Li ZM, Load-dependent shear wave elastography of the transverse carpal ligament, Annual Meeting of Orthopaedic Research Society (ORS), February 04-08, 2022, Tampa, FL</a></li>
+                    <li><a style="color: white" href="assets/pdfs/ORS2020_abstract.pdf">Hawk J et al. Quantifying 3D Volume of Glenohumeral Capsule Following a Shoulder Dislocation from Clinical MR Arthrogram Data, Annual Meeting of Orthopaedic Research Society (ORS), 2020, Phoenix, AZ</a></li>
+                </ul>
             </div>
         </section>
         <!-- Map-->
@@ -126,228 +139,4 @@
                 <p class="text-muted small mb-0">Copyright &copy; Your Website 2022</p>
             </div>
         </footer>
-        <!-- Portfolio Modals -->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Game-Playing Framework and Intelligent Game-Playing Agents</h2>
-                                <hr class="star-primary">
-                                <img src="img/portfolio/Gologo.png" class="img-responsive img-centered" alt="">
-                                <p>My undergraduate thesis in Computer Science.  Included is a general purpose games-playing framework complete with 2 games, Go and Hex.  Also included are a trivial agent and 4 intelligent agents which can play the games.  The trivial agent simply makes random moves on the board, while the four other agents use Monte-Carlo tree search.  One uses a vanilla MCTS, while the other three each use either an artificial neural network, genetic algorithm, or neuro-evolved network to bias the MCTS algorithm.  Libraries used include JCommander and the Encog machine learning library.  Following the creation of the framework, games, and agents, I performed research analyzing the tradeoff between the performance and computational complexity of each agent.</p>
-                                <ul class="list-inline item-details">
-                                    <li>Language:
-                                        <strong>Java</strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong>Fall 2016 - Spring 2017</strong>
-                                    </li>
-                                    <li>Source Code:
-                                        <strong><a href="https://github.com/LBHawk/GP-games-framework">Available on Github</a>
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Raspberry Pi Surveillence</h2>
-                                <hr class="star-primary">
-                                <img src="img/portfolio/surveillance.png" class="img-responsive img-centered" alt="">
-                                <p>Using a Raspberry Pi camera and the OpenCV computer vision library, I created a security camera with two different functions.  The camera can function as a basic motion detector, and works by tracking changes in the frame over time and signaling that the room is occupied if a certain difference threshold is met between frames.  Second, a histogram-of-gradients (HOG) has been trained to recognize an actual human figure, and each frame of the camera's recording is ran through the HOG in real-time, signaling the room is occupied whenever a human figure is detected.  When a human figure is detected, the frame is saved and uploaded to dropbox.<p>
-                                <ul class="list-inline item-details">
-                                    <li>Language:
-                                        <strong>Python
-                                        </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong>Fall 2016
-                                        </strong>
-                                    </li>
-                                    <li>Source Code:
-                                        <strong><a href="https://github.com/LBHawk/body-detect">Available on Github</a>
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Unity3D Shooter Skeleton</h2>
-                                <hr class="star-primary">
-                                <img src="img/portfolio/Unity.png" class="img-responsive img-centered" alt="">
-                                <p>The "skeleton" of a wave-based shooter game created in Unity.  By skeleton, I mean there are no character models, only one level, and only one generic weapon.  But there is basic functionality, royalty-free music, and sound effects!  This project is still in progress and will hopefully no longer be a "skeleton" in the near future.  After adding character models, maps, and weapons, I plan to convert the game to mobile and add it to the Google Play store.  Hopefully that day actually comes.</p>
-                                <ul class="list-inline item-details">
-                                    <li>Language:
-                                        <strong>C#
-                                        </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong>Winter 2016 - Present
-                                        </strong>
-                                    </li>
-                                    <li>Source Code:
-                                        <strong><a href="https://github.com/LBHawk/Bare-Unity-Shooter">Avaliable on Github</a>
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Gravity Man</h2>
-                                <hr class="star-primary">
-                                <img src="img/portfolio/gman.png" class="img-responsive img-centered" alt="">
-                                <p>My first foray into Android development.  This is a little endless runner game built on the LibGDX engine which has spent about a year on the Google Play store.  The purpose of this project was to learn about Android game development aspects such as animation, ad integration, and the general publishing process.</p>
-                                <ul class="list-inline item-details">
-                                    <li>Language:
-                                        <strong>Java
-                                        </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong>Summer 2016
-                                        </strong>
-                                    </li>
-                                    <li>Source Code:
-                                        <strong><a href="https://github.com/LBHawk/GravityMan">Available on Github</a>
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>OpenStack Deployment</h2>
-                                <hr class="star-primary">
-                                <img src="img/portfolio/Openstack.png" class="img-responsive img-centered" alt="">
-                                <p>A friend and I convinced Allegheny's CS department to lend us five computers to attempt to deploy OpenStack to them and provide infrastructure-as-a-service to the department.  We used Ubuntu MAAS to configure the cluster and bootstrap Juju, a service orchestration tool.  Using Juju, we then successfully deployed all of the needed OpenStack software across the five machines.  After deploying OpenStack, we learned the school's network security settings would not allow connection to the cluster over the school's network; despite this, it was still a fun experience poking into the world of distributed systems.</p>
-                                <ul class="list-inline item-details">
-                                    <li>Language:
-                                        <strong>N/A
-                                        </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong>Spring 2016
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Mathematical Chaos</h2>
-                                <hr class="star-primary">
-                                <img src="img/portfolio/chaos.png" class="img-responsive img-centered" alt="">
-                                <p>My undergraduate thesis in Mathematics, titled <i>A Classification of Chaos for Linear Fractional Transformations of the Backward Shift on lp</i>.  My research dealt with the mathematical definition of chaos, and looks at a very simple method of determining if a specific type of system (linear fractional transformations of the backward shift) is chaotic.</p>
-                                <ul class="list-inline item-details">
-                                    <li>Language:
-                                        <strong>Math!
-                                        </strong>
-                                    </li>
-                                    <li>Date:
-                                        <strong>Fall 2016
-                                        </strong>
-                                    </li>
-                                    <li>Paper:
-                                        <strong><a href="https://github.com/LBHawk/Math-Thesis/blob/master/FinalDoc.pdf">Available on Github</a>
-                                        </strong>
-                                    </li>
-                                </ul>
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+ 
